@@ -1,0 +1,197 @@
+{
+  "source": "Simple Icons CDN (original SVG brand marks)",
+  "downloaded": [
+    {
+      "name": "JavaScript",
+      "filename": "javascript.svg",
+      "source": "https://cdn.simpleicons.org/javascript"
+    },
+    {
+      "name": "Node.js",
+      "filename": "nodejs.svg",
+      "source": "https://cdn.simpleicons.org/nodedotjs"
+    },
+    {
+      "name": "Express",
+      "filename": "express.svg",
+      "source": "https://cdn.simpleicons.org/express"
+    },
+    {
+      "name": "MongoDB",
+      "filename": "mongodb.svg",
+      "source": "https://cdn.simpleicons.org/mongodb"
+    },
+    {
+      "name": "PostgreSQL",
+      "filename": "postgresql.svg",
+      "source": "https://cdn.simpleicons.org/postgresql"
+    },
+    {
+      "name": "MySQL",
+      "filename": "mysql.svg",
+      "source": "https://cdn.simpleicons.org/mysql"
+    },
+    {
+      "name": "Prisma",
+      "filename": "prisma.svg",
+      "source": "https://cdn.simpleicons.org/prisma"
+    },
+    {
+      "name": "Redis",
+      "filename": "redis.svg",
+      "source": "https://cdn.simpleicons.org/redis"
+    },
+    {
+      "name": "React",
+      "filename": "react.svg",
+      "source": "https://cdn.simpleicons.org/react"
+    },
+    {
+      "name": "Next.js",
+      "filename": "nextjs.svg",
+      "source": "https://cdn.simpleicons.org/nextdotjs"
+    },
+    {
+      "name": "TypeScript",
+      "filename": "typescript.svg",
+      "source": "https://cdn.simpleicons.org/typescript"
+    },
+    {
+      "name": "HTML5",
+      "filename": "html5.svg",
+      "source": "https://cdn.simpleicons.org/html5"
+    },
+    {
+      "name": "CSS3",
+      "filename": "css3.svg",
+      "source": "https://cdn.simpleicons.org/css"
+    },
+    {
+      "name": "Tailwind CSS",
+      "filename": "tailwind-css.svg",
+      "source": "https://cdn.simpleicons.org/tailwindcss"
+    },
+    {
+      "name": "Git",
+      "filename": "git.svg",
+      "source": "https://cdn.simpleicons.org/git"
+    },
+    {
+      "name": "GitHub",
+      "filename": "github.svg",
+      "source": "https://cdn.simpleicons.org/github"
+    },
+    {
+      "name": "Cursor",
+      "filename": "cursor.svg",
+      "source": "https://cdn.simpleicons.org/cursor"
+    },
+    {
+      "name": "Docker",
+      "filename": "docker.svg",
+      "source": "https://cdn.simpleicons.org/docker"
+    },
+    {
+      "name": "Kubernetes",
+      "filename": "kubernetes.svg",
+      "source": "https://cdn.simpleicons.org/kubernetes"
+    },
+    {
+      "name": "Neo4j",
+      "filename": "neo4j.svg",
+      "source": "https://cdn.simpleicons.org/neo4j"
+    },
+    {
+      "name": "MCP (Model Context Protocol)",
+      "filename": "mcp.svg",
+      "source": "https://cdn.simpleicons.org/modelcontextprotocol"
+    },
+    {
+      "name": "Claude",
+      "filename": "claude.svg",
+      "source": "https://cdn.simpleicons.org/claude"
+    },
+    {
+      "name": "Neon",
+      "filename": "neon.svg",
+      "source": "https://cdn.simpleicons.org/neon"
+    },
+    {
+      "name": "Turborepo",
+      "filename": "turborepo.svg",
+      "source": "https://cdn.simpleicons.org/turborepo"
+    },
+    {
+      "name": "Postman",
+      "filename": "postman.svg",
+      "source": "https://cdn.simpleicons.org/postman"
+    },
+    {
+      "name": "Go / Golang",
+      "filename": "golang.svg",
+      "source": "https://cdn.simpleicons.org/go"
+    },
+    {
+      "name": "Socket.IO",
+      "filename": "socket-io.svg",
+      "source": "https://cdn.simpleicons.org/socketdotio"
+    },
+    {
+      "name": "Better Auth",
+      "filename": "better-auth.svg",
+      "source": "https://cdn.simpleicons.org/betterauth"
+    }
+  ],
+  "failed": [
+    {
+      "name": "Java",
+      "slug": "java",
+      "filename": "java.svg",
+      "reason": "HTTP 404"
+    },
+    {
+      "name": "Visual Studio Code",
+      "slug": "visualstudiocode",
+      "filename": "vscode.svg",
+      "reason": "HTTP 404"
+    },
+    {
+      "name": "Inngest",
+      "slug": "inngest",
+      "filename": "inngest.svg",
+      "reason": "HTTP 404"
+    },
+    {
+      "name": "Pinecone",
+      "slug": "pinecone",
+      "filename": "pinecone.svg",
+      "reason": "HTTP 404"
+    }
+  ],
+  "noCanonicalBrandLogo": [
+    {
+      "name": "RAG",
+      "reason": "A technique, not a standalone brand with one canonical logo."
+    },
+    {
+      "name": "AI Agents",
+      "reason": "A category, not a standalone brand with one canonical logo."
+    },
+    {
+      "name": "LLMs",
+      "reason": "A technology category; choose a specific provider logo if desired."
+    },
+    {
+      "name": "GraphDB",
+      "reason": "Ambiguous name; select a specific GraphDB product/vendor to use its exact mark."
+    },
+    {
+      "name": "Cypher Query Language",
+      "reason": "A query language; use the Neo4j logo if you mean Neo4j Cypher."
+    },
+    {
+      "name": "WebSocket",
+      "reason": "A protocol, not a standalone brand with one canonical logo."
+    }
+  ]
+}

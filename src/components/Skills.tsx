@@ -22,19 +22,21 @@ const Skills = () => {
       <div className="flex gap-3 flex-wrap justify-center">
         <Skillicon imgurl={"/tailwind-css.svg"} />
         <Skillicon imgurl={"/mui.png"} />
-        <Skillicon imgurl={"/framer.png"} />
         <Skillicon imgurl={"/redux.png"} />
         <Skillicon imgurl={"/claude.svg"} />
         <Skillicon imgurl={"/better-auth.svg"} />
+         <Skillicon imgurl={"/redux.png"} />
+         <Skillicon imgurl={"/figma.png"} />
       </div>
 
       {/* Backend & API Development */}
       <div className="flex gap-3 flex-wrap justify-center">
         <Skillicon imgurl={"/nodejs.svg"} />
-        <Skillicon imgurl={"/express.svg"} />
+        <Skillicon imgurl={"/express.png"} />
         <Skillicon imgurl={"/socket-io.svg"} />
         <Skillicon imgurl={"/mcp.svg"} />
         <Skillicon imgurl={"/postman.svg"} />
+        
       </div>
 
       {/* Databases & ORM */}

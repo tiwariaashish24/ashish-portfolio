@@ -1,4 +1,6 @@
+
 "use client";
+
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/utils/cn";
@@ -11,44 +13,36 @@ export const TextGenerateEffect = ({
   className?: string;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
+
   useEffect(() => {
     animate(
       "span",
-      {
-        opacity: 1,
-      },
+      { opacity: 1 },
       {
         duration: 2,
         delay: stagger(0.2),
       }
     );
-  }, [scope.current]);
-
-  const renderWords = () => {
-    return (
-      <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
-            <motion.span
-              key={word + idx}
-              className="dark:text-white text-black opacity-0"
-            >
-              {word}{" "}
-            </motion.span>
-          );
-        })}
-      </motion.div>
-    );
-  };
+  }, [animate, words]);
 
   return (
-    <div className={cn("", className)}>
-      <div className="mt-4">
-        <div className=" dark:text-[#dbdbdb] text-black  leading-snug tracking-wide">
-          {renderWords()}
-        </div>
-      </div>
-    </div>
+    <span
+      className={cn(
+        "mt-4 block leading-snug tracking-wide dark:text-[#dbdbdb] text-black",
+        className
+      )}
+    >
+      <motion.span ref={scope} className="inline">
+        {wordsArray.map((word, idx) => (
+          <motion.span
+            key={`${word}-${idx}`}
+            className="dark:text-white text-black opacity-0"
+          >
+            {word}{" "}
+          </motion.span>
+        ))}
+      </motion.span>
+    </span>
   );
 };

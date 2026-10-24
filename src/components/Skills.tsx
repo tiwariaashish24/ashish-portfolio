@@ -12,7 +12,7 @@ const Skills = () => {
         <Skillicon imgurl={"/java.png"} />
         <Skillicon imgurl={"/python.png"} />
         <Skillicon imgurl={"/html.png"} />
-        <Skillicon imgurl={"/css.png"} />
+        <Skillicon imgurl={"/css3.svg"} />
         <Skillicon imgurl={"/js.png"} />
         <Skillicon imgurl={"/react.png"} />
         <Skillicon imgurl={"/next.png"} />
@@ -24,8 +24,8 @@ const Skills = () => {
         <Skillicon imgurl={"/mui.png"} />
         <Skillicon imgurl={"/framer.png"} />
         <Skillicon imgurl={"/redux.png"} />
-        <Skillicon imgurl={"/figma.png"} />
-        <Skillicon imgurl={"/node.png"} />
+        <Skillicon imgurl={"/claude.svg"} />
+        <Skillicon imgurl={"/better-auth.svg"} />
       </div>
 
       <div className="flex gap-3 flex-wrap justify-center ">

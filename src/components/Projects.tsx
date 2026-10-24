@@ -60,7 +60,7 @@ const Projects = () => {
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <Image
-            src="/"
+            src="/Notebooklm"
             width={1500}
             height={1500}
             className="h-full w-full object-cover"

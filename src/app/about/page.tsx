@@ -1,68 +1,98 @@
-import React from 'react'
+import React from "react";
+import {
+  IconPhone,
+  IconMail,
+  IconMapPin,
+} from "@tabler/icons-react";
 
-const page = () => {
+const contacts = [
+  {
+    label: "Phone",
+    value: "+91 87093 88221",
+    href: "tel:+918709388221",
+    Icon: IconPhone,
+  },
+  {
+    label: "Email",
+    value: "tiwariiashish04@gmail.com",
+    href: "mailto:tiwariiashish04@gmail.com",
+    Icon: IconMail,
+  },
+  {
+    label: "Location",
+    value: "Greater Noida, UP, India",
+    Icon: IconMapPin,
+  },
+];
+
+const Page = () => {
   return (
-    <div className="min-h-screen bg-black p-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-7xl text-[#7e3bc6] text-center font-extrabold mb-12">
+    <main className="min-h-screen bg-black px-5 py-20 text-[#e9e9e9] sm:px-8">
+      <section className="mx-auto max-w-5xl">
+        {/* Gradient Heading */}
+        <h1 className="text-upside-down mb-4 text-center text-4xl font-extrabold sm:text-5xl md:text-7xl">
           About Me
         </h1>
-        
-        <div className="space-y-8">
-          <div className="bg-gradient-to-br from-purple-900/30 to-violet-900/30 rounded-2xl p-8 border border-purple-500/20">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e9e9e9] mb-4">
-              Hello, I'm Ashish Kumar Tiwari
-            </h2>
-            <p className="text-[#e9e9e9] text-lg leading-relaxed">
-              I'm a dedicated BTech student at Dronacharya Group of Institutions, with a fervent passion for coding, web development, and programming. I love building innovative solutions and exploring new technologies.
-            </p>
-          </div>
 
-          <div className="bg-gradient-to-br from-purple-900/30 to-violet-900/30 rounded-2xl p-8 border border-purple-500/20">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e9e9e9] mb-4">
-              My Journey
-            </h2>
-            <p className="text-[#e9e9e9] text-lg leading-relaxed">
-              Throughout my academic journey, I've developed a strong foundation in computer science concepts and hands-on experience with modern web technologies. I enjoy solving complex problems and turning ideas into reality through code.
-            </p>
-          </div>
+        {/* Heading Underline */}
+        <div className="mx-auto mb-10 h-1 w-16 rounded-full bg-gradient-to-r from-[#7e3bc6] via-cyan-400 to-[#7e3bc6]" />
 
-          <div className="bg-gradient-to-br from-purple-900/30 to-violet-900/30 rounded-2xl p-8 border border-purple-500/20">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e9e9e9] mb-4">
-              What I Do
-            </h2>
-            <ul className="text-[#e9e9e9] text-lg space-y-3">
-              <li className="flex items-start">
-                <span className="text-[#7e3bc6] mr-2">•</span>
-                <span>Build modern web applications using React, Next.js, and Node.js</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#7e3bc6] mr-2">•</span>
-                <span>Solve competitive programming problems on LeetCode and Codeforces</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#7e3bc6] mr-2">•</span>
-                <span>Develop AI-powered applications and integrate modern APIs</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#7e3bc6] mr-2">•</span>
-                <span>Contribute to open-source projects and collaborate with the developer community</span>
-              </li>
-            </ul>
-          </div>
+        {/* Introduction */}
+        <p className="mx-auto mb-16 max-w-3xl text-center text-base leading-relaxed text-[#e9e9e9]/85 sm:text-lg md:mb-20">
+          I&apos;m a passionate software developer and BTech student
+          at Dronacharya Group of Institutions, interested in
+          full-stack development, modern web technologies, and
+          solving challenging programming problems. I enjoy building
+          innovative applications and turning ideas into reality
+          through code.
+        </p>
 
-          <div className="bg-gradient-to-br from-purple-900/30 to-violet-900/30 rounded-2xl p-8 border border-purple-500/20">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e9e9e9] mb-4">
-              Let's Connect
-            </h2>
-            <p className="text-[#e9e9e9] text-lg leading-relaxed">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through the contact page or connect with me on LinkedIn, GitHub, or other platforms.
-            </p>
-          </div>
+        {/* Contact Information */}
+        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
+          {contacts.map(({ label, value, href, Icon }) => {
+            const content = (
+              <div className="group relative flex flex-col items-center gap-3 px-3 py-5 text-center transition-transform duration-300 hover:-translate-y-1">
+                {/* Icon */}
+                <Icon
+                  size={40}
+                  stroke={1.6}
+                  className="text-[#e9e9e9] transition-all duration-300 group-hover:scale-110 group-hover:text-cyan-400 group-hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.65)]"
+                />
+
+                {/* Label */}
+                <h2 className="text-lg font-semibold transition-colors duration-300 group-hover:text-cyan-400">
+                  {label}
+                </h2>
+
+                {/* Value */}
+                <p className="break-words text-sm text-[#a5a5b0] transition-colors duration-300 group-hover:text-white sm:text-base">
+                  {value}
+                </p>
+
+                {/* Cyan Hover Underline */}
+                <span className="absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 bg-gradient-to-r from-transparent via-cyan-400 to-transparent transition-all duration-500 group-hover:w-4/5" />
+
+                {/* Glow Effect */}
+                <span className="absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-0 blur-sm transition-all duration-500 group-hover:w-4/5 group-hover:opacity-100" />
+              </div>
+            );
+
+            return href ? (
+              <a
+                key={label}
+                href={href}
+                className="rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+              >
+                {content}
+              </a>
+            ) : (
+              <div key={label}>{content}</div>
+            );
+          })}
         </div>
-      </div>
-    </div>
-  )
-}
+      </section>
+    </main>
+  );
+};
 
-export default page
+export default Page;

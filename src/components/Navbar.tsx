@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "./ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { IconHome, IconMessage, IconUser, IconFileText } from "@tabler/icons-react";
 
 function Navbar() {
     const navItems = [
@@ -14,6 +14,13 @@ function Navbar() {
           name: "About",
           link: "/about",
           icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        },
+        {
+          name: "Resume",
+          link: "/Resume.pdf",
+          icon: <IconFileText className="h-4 w-4 text-neutral-500 dark:text-white" />,
+          download: false,
+          target: "_blank",
         },
         {
           name: "Contact",
